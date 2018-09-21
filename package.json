@@ -1,0 +1,22 @@
+{
+  "name": "setupmongo",
+  "version": "1.0.0",
+  "description": "learn how to setup mongo database ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Rahulsc@bitbucket.org/Rahulsc/setupmongo.git"
+  },
+  "keywords": [
+    "setup",
+    "mongo",
+    "from",
+    "scratch"
+  ],
+  "author": "rahul singh chauhan",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/Rahulsc/setupmongo#readme"
+}
