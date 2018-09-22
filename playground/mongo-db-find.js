@@ -33,7 +33,7 @@ MongoClient.connect('mongodb://localhost:27017/askyama', (err, client)=>{
             console.log("======== get specific data ========");
             console.log(JSON.stringify(totalData, undefined, 2));
         });
-
+ 
         client.close();
     }
 });
