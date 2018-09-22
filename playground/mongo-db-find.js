@@ -1,34 +1,34 @@
 const {MongoClient, ObjectID} = require('mongodb');
 
-MongoClient.connect('mongodb://localhost:27017/askyama', (err, client)=>{
+MongoClient.connect('mongodb://localhost:27017/todo', (err, client)=>{
     if(err){
         console.log("Unable to connect to mongodb server");
     }else{
         console.log('success from mongodb');
-        const db = client.db('askyama');
+        const db = client.db('todo');
 
-        db.collection('Navigation').find().toArray().then((docs)=>{
+        db.collection('Todos').find().toArray().then((docs)=>{
             console.log(JSON.stringify(docs, undefined, 2));
         }, (err)=>{
             console.log('Unable to fetch data',err);
         });
 
-        db.collection('Navigation').find({
-            _id: new ObjectID('5ba4dfe86c83ab3028e2f28a')
+        db.collection('Todos').find({
+            _id: new ObjectID('5ba5f9315b9e0d2ac036d278')
         }).toArray().then((docs)=>{
             console.log(JSON.stringify(docs, undefined, 2));
         }, (err)=>{
             console.log('Unable to fetch data',err);
         });
 
-        db.collection('Navigation').find().count().then((count)=>{
+        db.collection('Todos').find().count().then((count)=>{
             console.log(`Total Count:${count}`);
         }, (err)=>{
             console.log('Unable to count', err);
         });
 
-        db.collection('Navigation').find({
-            menuName:'Contact'
+        db.collection('Users').find({
+            name:'rahul1'
         }).toArray().then((totalData)=>{
             console.log("======== get specific data ========");
             console.log(JSON.stringify(totalData, undefined, 2));
