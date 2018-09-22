@@ -18,5 +18,8 @@
   ],
   "author": "rahul singh chauhan",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/Rahulsc/setupmongo#readme"
+  "homepage": "https://bitbucket.org/Rahulsc/setupmongo#readme",
+  "dependencies": {
+    "mongodb": "^3.1.6"
+  }
 }
